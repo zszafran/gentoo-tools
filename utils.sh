@@ -16,7 +16,7 @@ function mount_efi_boot() {
   mkdir -p $2/mnt/efi
   mkdir -p $2/boot
   mount "UUID=$1" $2/mnt/efi
-  mount --rbind $2/mnt/efi/$3 $1/boot
+  mount --rbind $2/mnt/efi/$3 $2/boot
 }
 
 function mount_cdrom() {
