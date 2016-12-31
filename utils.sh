@@ -52,7 +52,7 @@ function git_fetch() {
 function install_stage3() {
   status_update "Installing Stage3"
   wget http://distfiles.gentoo.org/releases/amd64/autobuilds/${1}/stage3-amd64-${1}.tar.bz2 -O $2/stage3.tar.bz2
-  tar xvjkf $2/stage3.tar.bz2 -C $2 || true
+  tar xvjkf $2/stage3.tar.bz2 -C $2 --overwrite
   rm $2/stage3.tar.bz2
 }
 
