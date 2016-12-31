@@ -6,7 +6,7 @@ source $DIR/utils.sh
 
 ROOT_MOUNT="/"
 REPO_DIR="/repo"
-NEW_GCC="x86_64-gentoo-linux-gnu-4.9.3"
+NEW_GCC="x86_64-gentoo-linux-gnu-5.4.0"
 
 update_env
 
